@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color1"
-    tools:context=".MainActivity">
+    android:background="@color/color5"
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="130dp"
         android:src="@drawable/error_svgrepo_com"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        ></ImageView>
+        />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilusername"
@@ -26,6 +26,7 @@
         app:layout_constraintTop_toBottomOf="@id/logo"
         app:layout_constraintStart_toStartOf="@id/leftGuide"
         app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:startIconDrawable="@drawable/iconuser"
         >
         <EditText
             android:layout_width="match_parent"
@@ -33,7 +34,6 @@
             android:background="@color/color3"
             android:hint="Username">
         </EditText>
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -44,34 +44,45 @@
         app:layout_constraintStart_toStartOf="@id/leftGuide"
         app:layout_constraintEnd_toEndOf="@id/rightGuide"
         app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/iconbloq"
         >
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/color3"
             android:hint="Password">
-
         </EditText>
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/login"
         android:text="login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tilpassword"
         app:layout_constraintStart_toStartOf="@id/leftGuide"
-        />
+        style="@style/mainbutton" />
+
     <Button
         android:id="@+id/cancel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:text="Cancel"
+        android:backgroundTint="@color/color2"
+        android:textColor="@color/color5"
         app:layout_constraintStart_toEndOf="@+id/login"
         app:layout_constraintEnd_toEndOf="@id/rightGuide"
         app:layout_constraintTop_toTopOf="@+id/login"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We you got an account? Sign up here"
+        android:textColor="@color/color3"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        tools:layout_editor_absoluteY="460dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/leftGuide"
