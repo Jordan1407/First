@@ -74,12 +74,11 @@
 
     <Button
         android:id="@+id/cancel"
+        style="@style/buttonoutlined"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:text="Cancel"
-        android:backgroundTint="@color/color2"
-        android:textColor="@color/color5"
         app:layout_constraintStart_toEndOf="@+id/login"
         app:layout_constraintEnd_toEndOf="@id/rightGuide"
         app:layout_constraintTop_toTopOf="@+id/login"/>

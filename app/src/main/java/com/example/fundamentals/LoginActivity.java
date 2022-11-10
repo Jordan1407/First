@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        //    Glide for loading girls
+        //    Glide fondo
         ImageView mGirl = findViewById(R.id.girl);
 
 
@@ -25,18 +25,17 @@ public class LoginActivity extends AppCompatActivity {
               .load("https://images.unsplash.com/photo-1549492423-400259a2e574?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=321&q=80")
                 //.load(R.drawable.girl)
                 .transition(DrawableTransitionOptions.withCrossFade(100))
-
                 .centerCrop()
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.fucsia_200)))
 //                .circleCrop()
                 .into(mGirl);
 
+        //Glide logo
         ImageView mlogo = findViewById(R.id.logo);
         Glide.with(this)
                 .load("https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80")
                 //.load(R.drawable.girl)
                 .transition(DrawableTransitionOptions.withCrossFade(100))
-
                 .circleCrop()
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.fucsia_200)))
 //                .circleCrop()

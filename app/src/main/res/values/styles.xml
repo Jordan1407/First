@@ -7,4 +7,12 @@
         <item name="android:backgroundTint">@color/color2</item>
         <item name="android:textColor">@color/color5</item>
     </style>
+    <style name="buttonoutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color2</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="strokeColor">@color/color2</item>
+    </style>
+
 </resources>
