@@ -4,19 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color5"
+    android:background="@drawable/gradient"
     tools:context=".LoginActivity">
-
+<!--imagen-->
+    <ImageView
+        android:id="@+id/girl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        />
+    <!--//android:src="@drawable/girl"-->
+    <!--username-->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="130dp"
-        android:src="@drawable/error_svgrepo_com"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--android:src="@drawable/error_svgrepo_com"-->
+
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilusername"
@@ -36,6 +46,7 @@
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!--password-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilpassword"
         android:layout_width="0dp"
@@ -73,16 +84,17 @@
         app:layout_constraintEnd_toEndOf="@id/rightGuide"
         app:layout_constraintTop_toTopOf="@+id/login"/>
 
-
     <TextView
+        android:id="@+id/opensign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="We you got an account? Sign up here"
+        android:text="Have you got an account? Sign up here"
         android:textColor="@color/color3"
         app:layout_constraintEnd_toEndOf="@id/rightGuide"
         app:layout_constraintTop_toBottomOf="@id/login"
         app:layout_constraintStart_toStartOf="@id/leftGuide"
-        tools:layout_editor_absoluteY="460dp" />
+        tools:layout_editor_absoluteY="460dp"
+        android:onClick="openSignup" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/leftGuide"

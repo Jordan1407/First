@@ -70,9 +70,9 @@
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--Reppassword-->
+    <!--CfPassword-->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/rpPassword"
+        android:id="@+id/CfPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/addpassword"
@@ -83,25 +83,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/color3"
-            android:hint="Password">
+            android:hint="Confirm Password">
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <ImageButton
         android:id="@+id/btCheck"
-        android:text="login"
-        app:layout_constraintTop_toBottomOf="@id/rpPassword"
+        android:src="@drawable/check"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color2"
+        app:tint="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/CfPassword"
         app:layout_constraintStart_toStartOf="@id/leftGuide"
-        style="@style/mainbutton" />
+         />
 
-    <Button
+    <ImageButton
         android:id="@+id/btCancel"
+        android:src="@drawable/cancel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:text="Cancel"
         android:backgroundTint="@color/color2"
-        android:textColor="@color/color5"
+        app:tint="@color/black"
         app:layout_constraintStart_toEndOf="@+id/btCheck"
         app:layout_constraintEnd_toEndOf="@id/rightGuide"
         app:layout_constraintTop_toTopOf="@+id/btCheck"/>
